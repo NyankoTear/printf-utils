@@ -7,7 +7,6 @@ This project maintains redirecting the `printf()` function to an UART. Also, it 
 - STM32 HAL library
 
 ## How to use `printf()`
----
 1. In order to use this feature, copy all `*.c` and `*.h` files into your project or add the repository as submodule.
 ```bash
 git submodule add https://github.com/NyankoTear/printf-utils.git
@@ -21,7 +20,6 @@ git submodule add https://github.com/NyankoTear/printf-utils.git
 5. Initialize the UART handler calling `initialize_uart_printf()`.
 6. You can finally use `printf()`.
 ## How to use the debug messages (`DEBUG_V`, `DEBUG_VV`, and `DEBUG_VVV`)
----
 1. First, you must redirect the `printf()` function to the UART. Please follow the guideline: How to use `printf()`.
 2. Add a preprocessor symbol: `DEBUG_LEVEL=<verbose level>`
 3. Depending on your debug verbose level, the `<verbose level>` can be set from 0 to 3.
@@ -34,7 +32,6 @@ DEBUG_LEVEL=3 // Activates all debug messages.
 ```
 
 ## Troubleshooting
----
 ### I configured the UART peripheral correctly, but it prints nothing.
 You may coded like this:
 ```C
