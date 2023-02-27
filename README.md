@@ -20,7 +20,7 @@ git submodule add https://github.com/NyankoTear/printf-utils.git
 5. Initialize the UART handler calling `initialize_uart_printf()`.
 6. You can finally use `printf()`.
 ## How to use the debug messages (`DEBUG_V`, `DEBUG_VV`, and `DEBUG_VVV`)
-1. First, you must redirect the `printf()` function to the UART. Please follow the guideline: How to use `printf()`.
+1. First, you must redirect the `printf()` function to the UART. Please follow the guideline: [How to use `printf()`](#how-to-use-printf).
 2. Add a preprocessor symbol: `DEBUG_LEVEL=<verbose level>`
 3. Depending on your debug verbose level, the `<verbose level>` can be set from 0 to 3.
 ##### Examples
